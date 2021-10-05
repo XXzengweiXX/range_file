@@ -86,8 +86,6 @@ func start() {
 		return
 	}
 	log.Printf("start download file from %s\n save file to:%s\n total size:%d\n total slices:%d\n", info.url, info.savePath, info.totalSize, info.totalParts)
-	//fmt.Printf("%+v\n", info)
-	//return
 	download(info, Opt.MaxGoroutine)
 }
 
